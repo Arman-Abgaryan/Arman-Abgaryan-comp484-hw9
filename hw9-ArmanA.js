@@ -55,8 +55,10 @@ console.log("-------------------------"); // Separator for examples
 
 /*
 **Exercise 5: Type Coercion with Non-Plus Operators
-Set `valueA` to the number 10 and `valueB` to the string "4". Calculate `resultSubtraction` using the subtraction operator (`-`) and `resultMultiplication` using the multiplication 
-operator (`*`). Log the final values and use the `typeof` operator in separate console logs to demonstrate that JavaScript coerces `valueB` into a numeric type for these operations.
+Set `valueA` to the number 10 and `valueB` to the string "4". Calculate `resultSubtraction` 
+using the subtraction operator (`-`) and `resultMultiplication` using the multiplication 
+operator (`*`). Log the final values and use the `typeof` operator in separate console logs 
+to demonstrate that JavaScript coerces `valueB` into a numeric type for these operations.
 */
 console.log("Exercise 5:");
 
@@ -95,7 +97,7 @@ console.log(typeof explicitNull);
 console.log("-------------------------"); // Separator for examples
 
 /*
-typeof returns "object" for null as a result of an old JavaScript bug that wasn't resolved
+typeof returns "object" for null as a result of an old JavaScript quirk/bug that wasn't resolved
 Though typeof returns "object", it is still null which means no value at all
 */
 
@@ -107,11 +109,11 @@ demonstrate how JavaScript variables are weakly typed and hold typed values.
 */
 console.log("Exercise 7:");
 
-var isBlocking = true;
-console.log(typeof isBlocking);
+var isBlocking = true; // Declare a variable `isBlocking` and assign it the boolean value `true`
+console.log(typeof isBlocking); // console.log(typeof isBlocking)` after first assignment
 
-isBlocking = "true";
-console.log(typeof isBlocking);
+isBlocking = "true"; // reassign `isBlocking` to the string value "true" (with quotes)
+console.log(typeof isBlocking); // console.log(typeof isBlocking)` after second assignment
 
 console.log("-------------------------"); // Separator for examples
 
